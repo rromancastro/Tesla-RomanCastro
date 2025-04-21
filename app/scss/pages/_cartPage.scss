@@ -1,0 +1,115 @@
+#cartSection {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+
+    #cartSectionItems {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: auto;
+
+        article {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            #cartItemImage {
+                height: 60px;
+                width: 100px;
+                object-fit: cover;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            #removeItemIcon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+#cartCheckoutSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    gap: 20px;
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+#cartCheckoutSectionData {
+    width: 50%;
+    height: 100vh;
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: repeat(6, 50px);
+        align-items: center;
+        grid-template-areas: 'area1 area1 area2 area2'
+                             'area3 area3 area3 area4'
+                             'area5 area5 area5 area5'
+                             'area6 area6 area7 area7'
+                             'area8 area8 area8 area8'
+                             'area9 area9 area9 area9'; 
+        .formGroup {
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+            input {
+                border: 1px solid #dddddd;
+                transition: 0.5s;
+                padding: 5px 10px;
+                &:focus {
+                    border: 1px solid #9e9e9e;
+                    outline: none;
+                }
+            }
+            select {
+                border: 1px solid #dddddd;
+                transition: 0.5s;
+                padding: 5px 10px;
+                &:focus {
+                    border: 1px solid #9e9e9e;
+                    outline: none;
+                }
+            }
+        }
+        button {
+            width: 50%;
+            justify-self: center;
+            border: none;
+            height: 40px;
+            background-color: rgb(211, 211, 211);
+            cursor: pointer;
+        }
+    }
+}

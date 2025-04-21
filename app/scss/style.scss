@@ -1,0 +1,33 @@
+//sass --watch app/scss/style.scss app/globals.css
+
+
+@use 'vars';
+@use './pages/home';
+@use './pages/cartPage';
+@use './pages/productPage';
+@use './pages/loginPage';
+@use './pages/createProducts';
+@use './components/nav';
+@use './components/footer';
+@use './components/productListContainer';
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+//reset
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, button, a, select, label, input {
+    font-family: "Kanit", sans-serif;
+    line-height: 1;
+    color: vars.$fontBlack;
+}
+
+html {
+    scroll-behavior: smooth;
+}

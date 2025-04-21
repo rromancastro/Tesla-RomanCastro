@@ -1,0 +1,115 @@
+@use '../vars' as vars;
+
+#navColorWhite {
+    position: absolute;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    height: 10vh;
+    width: 100%;
+    padding: 0 5vw;
+    align-items: center;
+
+    #navLogo {
+        display: flex;
+        gap: 15px;
+        svg {
+            width: 100px;
+            height: auto;
+            path {
+                fill: vars.$fontWhite;
+            }
+        }
+        p {
+            border-left: 1px solid vars.$fontWhite;
+            padding-left: 10px;
+            color: vars.$fontWhite;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+    
+    #navUtilities {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        p {
+            color: vars.$fontWhite;
+            font-size: 14px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    #navIcons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        .navIcon {
+            width: 25px;
+            height: auto;
+            color: vars.$fontWhite;
+        }
+    }
+}
+
+#navColorBlack {
+    position: absolute;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    height: 10vh;
+    width: 100%;
+    padding: 0 5vw;
+    align-items: center;
+
+    #navLogo {
+        display: flex;
+        gap: 15px;
+        svg {
+            width: 100px;
+            height: auto;
+            path {
+                fill: vars.$fontBlack;
+            }
+        }
+        p {
+            border-left: 1px solid vars.$fontBlack;
+            padding-left: 10px;
+            color: vars.$fontBlack;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+    
+    #navUtilities {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        p {
+            color: vars.$fontBlack;
+            font-size: 14px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    #navIcons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        .navIcon {
+            width: 25px;
+            height: auto;
+            color: vars.$fontBlack;
+        }
+    }
+}

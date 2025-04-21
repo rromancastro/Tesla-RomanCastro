@@ -1,0 +1,114 @@
+#productPage {
+    padding: 10vh;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 1;
+    align-items: center;
+
+    #productPageImages {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        .productPageImagesImage {
+            height: 100%;
+            width: 100%;
+            transform: scale(1.4);
+            transition: 1s;
+            object-fit: contain;
+        }
+        .imageOpacity1 {
+            opacity: 1;
+        }
+        .imageOpacity0 {
+            opacity: 0;
+        }
+        button {
+            position: absolute;
+            z-index: 50;
+            transition: .5s;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        #productPageImagesButtonPrev {
+            left: 0;
+        }
+        #productPageImagesButtonNext {
+            right: 0;
+        }
+        .noViewButtons {
+            opacity: 0;
+        }
+        .viewButtons {
+            opacity: 1;
+        }
+    }
+}
+
+#productPageInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    p {
+        font-size: 18px;
+    }
+    #productPageInfoColors {
+        margin-top: 7px;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 15px;
+        div {
+            transition: .3s;
+            height: 35px;
+            width: 35px;
+            border-radius: 100%;
+            cursor: pointer;
+            background-size: contain;
+            &:nth-child(1) {
+                background-image: url('/colors/Paint_White.avif');
+            }
+            &:nth-child(2) {
+                background-image: url('/colors/Paint_Blue.avif');
+            }
+            &:nth-child(3) {
+                background-image: url('/colors/Paint_Black.avif');
+            }
+            &:nth-child(4) {
+                background-image: url('/colors/Paint_Red.avif');
+            }
+            &:nth-child(5) {
+                background-image: url('/colors/Paint_Silver_R1.avif');
+            }
+        }
+        .colorSelectedTrue {
+            box-shadow: 0 0 2px 2px grey;
+        }
+    }
+    button {
+        margin-top: 20px;
+        width: 50%;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        background-color: #F0F0F0;
+        cursor: pointer;
+        transition: .5s;
+        &:hover {
+            background-color: #1E2229;
+            color: #fafafa;
+        }
+    }
+}
