@@ -189,6 +189,9 @@
   }
 }
 @media (max-width: 430px) {
+  #homeFirstSection {
+    padding-left: 5vw;
+  }
   #homeFirstSection button {
     height: 9vw;
     font-size: 12px;
