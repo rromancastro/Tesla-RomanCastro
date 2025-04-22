@@ -173,3 +173,96 @@
         width: 45%;
     }
 }
+
+@media (max-width: 1024px) {
+
+#homeFirstSection {
+    h2 {
+        font-size: 50px;
+    }
+    h3 {
+        margin-bottom: 10px;
+    }
+    button {
+        width: 28vw;
+        font-size: 12px;
+    }
+    a {
+        font-size: 12px;
+    }
+}
+
+#homeFeaturedSection {
+    padding: 10vh 10vw;
+
+    #homeFeaturedSectionArticle {
+
+        div {
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+
+    #homeFeaturedSectionArticleReverse {
+
+        div {
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+
+#homeFeaturedBanner {
+    background-position: center;
+    padding-top: 14vh;
+}
+
+}
+
+@media (max-width: 430px) {
+
+    #homeFirstSection {
+        button {
+            height: 9vw;
+            font-size: 12px;
+        }
+        a {
+            height: 9vw;
+            font-size: 12px;
+            padding: 0;
+        }
+    }
+    
+    #homeFeaturedSection {
+        padding: 10vh 10vw;
+    
+        #homeFeaturedSectionArticle {
+            height: 20vh;
+            div {
+                p {
+                    font-size: 11px;
+                }
+            }
+        }
+    
+        #homeFeaturedSectionArticleReverse {
+            height: 20vh;
+    
+            div {
+                p {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    
+    
+    #homeFeaturedBanner {
+        background-position: center;
+        padding-top: 14vh;
+    }
+    
+    }

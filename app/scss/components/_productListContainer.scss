@@ -29,3 +29,44 @@
        }
     }
 }
+
+@media (max-width: 1024px) {
+    #productsListContainer {
+        article {
+           h2 {
+            font-size: 13px;
+           }
+    
+           p {
+            font-size: 11px;
+           }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    #productsListContainer {
+        padding: 10vh 5vw;
+        grid-template-columns: repeat(2, 1fr);
+    
+        article {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+           #productListArticleImage {
+            height: 200px;
+            object-fit: cover;
+            gap: 0;
+           } 
+    
+           h2 {
+            font-size: 16px;
+           }
+    
+           p {
+            font-size: 14px;
+           }
+        }
+    }
+}
